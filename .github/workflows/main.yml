@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build with Buildozer
-        uses: Peter-Smit/buildozer-action@v1
+        uses: Peter-Smit/buildozer-action@v1.2.3
         with:
           buildozer_version: stable
 
@@ -18,4 +18,5 @@ jobs:
         with:
           name: package
           path: bin/*.apk
+          
           
